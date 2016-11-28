@@ -1,0 +1,7 @@
+<tr id="customer_<%= customer.id %>">
+    <td><%= customer.name %></td>
+    <td><%= customer.value %></td>
+    <td>
+        <%= link_to "Delete", customer, remote: true, :method => :delete %>
+    </td>
+</tr>

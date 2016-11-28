@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @song.name %>
+</p>
+
+<%= link_to 'Edit', [:edit, @album, @song] %> |
+<%= link_to 'Delete', [@album, @song], method: :delete %>
+<%= link_to 'Back to album', @album %>

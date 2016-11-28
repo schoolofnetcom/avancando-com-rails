@@ -1,0 +1,15 @@
+<%= form_tag(action: 'searchAlbum', method: 'get', controller: 'albums') do %>
+
+    <%= label_tag(:name, "Search for album name: ") %>
+    <%= text_field_tag(:name) %>
+    <%= submit_tag("Do search") %>
+
+    <%= check_box_tag(:colors) %>
+    <%= label_tag(:colors, "Colors") %>
+
+    <%= radio_button_tag(:gender, "gender") %>
+    <%= label_tag(:gender, "Gender") %>
+
+    <%= text_area_tag(:msg, "Hello this is a textarea", class: 'test') %>
+
+<% end %>

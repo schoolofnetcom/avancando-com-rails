@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @album.title %>
+</p>
+
+    <% @album.songs.each do |song| %>
+        <p>
+            <%= song.name %>
+        </p>
+    <% end %>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
+<%= link_to 'New song', new_album_song_path(@album)%>
